@@ -1,0 +1,4 @@
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_open_whatsapp: ^2.0.0

@@ -78,6 +78,7 @@ if __name__ == "__main__":
         print("3. Quit")
         choice = input("Enter your choice: ")
 
+
         if choice == "1":
             # Admin Section
             print("\nAdmin Section:")

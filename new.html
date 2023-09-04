@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Savings Account Information</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            padding: 20px;
+        }
+
+        h1 {
+            color: #007bff;
+        }
+
+        .account-details {
+            border: 1px solid #ccc;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        #savings-form {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Savings Account Information</h1>
+
+    <div class="account-details">
+        <h2>Account Holder: John Doe</h2>
+        <p>Account Number: 1234567890</p>
+        <p>Balance: $5,000.00</p>
+        <p>Interest Rate: 2.5%</p>
+        <p>Account Status: Active</p>
+    </div>
+
+    <div id="savings-form">
+        <h2>Make Savings</h2>
+        <form id="savings-form">
+            <label for="daily-savings">Daily Savings:</label>
+            <input type="number" id="daily-savings" placeholder="Enter amount">
+            <button type="button" onclick="makeDailySavings()">Save Daily</button>
+
+            <label for="weekly-savings">Weekly Savings:</label>
+            <input type="number" id="weekly-savings" placeholder="Enter amount">
+            <button type="button" onclick="makeWeeklySavings()">Save Weekly</button>
+
+            <label for="monthly-savings">Monthly Savings:</label>
+            <input type="number" id="monthly-savings" placeholder="Enter amount">
+            <button type="button" onclick="makeMonthlySavings()">Save Monthly</button>
+        </form>
+
+        <p id="savings-result"></p>
+    </div>
+
+    <script>
+        let balance = 5000.00; // Initial balance
+
+        function updateBalance(amount) {
+            balance += amount;
+            document.getElementById("savings-result").textContent = `Updated Balance: $${balance.toFixed(2)}`;
+        }
+
+        function makeDailySavings() {
+            const dailyAmount = parseFloat(document.getElementById("daily-savings").value);
+            if (!isNaN(dailyAmount)) {
+                updateBalance(dailyAmount);
+            }
+        }
+
+        function makeWeeklySavings() {
+            const weeklyAmount = parseFloat(document.getElementById("weekly-savings").value);
+            if (!isNaN(weeklyAmount)) {
+                updateBalance(weeklyAmount * 7); // Assuming 7 days in a week
+            }
+        }
+
+        function makeMonthlySavings() {
+            const monthlyAmount = parseFloat(document.getElementById("monthly-savings").value);
+            if (!isNaN(monthlyAmount)) {
+                updateBalance(monthlyAmount * 30); // Assuming 30 days in a month
+            }
+        }
+    </script>
+</body>
+
+</html>

@@ -17,10 +17,10 @@ class Temperature:
         self._celsius = value
 
 temp = Temperature(25)
-print(temp.celsius)    # Output: 25
-print(temp.fahrenheit) # Output: 77.0
+print(temp.celsius)
+print(temp.fahrenheit)
 temp.celsius = 30
-print(temp.fahrenheit) # Output: 86.0
+print(temp.fahrenheit)
 
 
 
@@ -38,5 +38,4 @@ print(temp.fahrenheit) # Output: 86.0
 # obj = MyClass(10)
 # # Output:
 # # Creating class MyClass with attributes {'__module__': '__main__', 'class_variable': 42, '__init__': <function MyClass.__init__ at 0x...>, '__doc__': None}
-
 

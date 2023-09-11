@@ -23,8 +23,6 @@
 #     print()
 
 # sum of number from 1 to a given number
-
-
 def sum_numbers():
     num = int(input("Enter the number:"))
     sum_of_num = 0

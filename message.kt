@@ -6,7 +6,7 @@ fun main() {
     val message = "Happy Birthday!"
 
     try {
-        val process = Runtime.getRuntime().exec("cmd /c start https://wa.me/$phoneNumber/?text=$message")
+        val process = Runtime.getRuntime().exec("cmd /c start https://wa.me/+233202334725/?text=$message")
         process.waitFor()
     } catch (e: IOException) {
         e.printStackTrace()

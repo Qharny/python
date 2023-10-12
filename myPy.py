@@ -2,6 +2,9 @@
 
 # get user name
 name = input("Enter your name: ")
+print(f"Hello {name}")
+print("This is the pattern of your name.")
+print("\n\n ※⁜※⁜※⁜※⁜※⁜※⁜※⁜※⁜※⁜※⁜※⁜※⁜※⁜※⁜※⁜※ \n\n")
 
 for x in name:
     x = x.upper()
@@ -16,7 +19,7 @@ for x in name:
           #         #
 
 ''')
-    elif x == "B":
+    if x == "B":
         print('''
 
             #####
@@ -26,7 +29,7 @@ for x in name:
             #####
 
 ''')
-    elif x == "C":
+    if x == "C":
         print('''
 
              ####
@@ -36,7 +39,7 @@ for x in name:
              ####
 
 ''')
-    elif x == "D":
+    if x == "D":
         print('''
 
             ####
@@ -46,7 +49,7 @@ for x in name:
             ####
 
 ''')
-    elif x == "E":
+    if x == "E":
         print('''
 
             ######
@@ -56,7 +59,7 @@ for x in name:
             ######
 
 ''')
-    elif x == "F":
+    if x == "F":
         print('''
 
             ######
@@ -66,7 +69,7 @@ for x in name:
             #
 
 ''')
-    elif x == "G":
+    if x == "G":
         print('''
 
              #####
@@ -76,7 +79,7 @@ for x in name:
              #####
 
 ''')
-    elif x == "H":
+    if x == "H":
         print('''
 
             #   #
@@ -86,7 +89,7 @@ for x in name:
             #   #
 
 ''')
-    elif x == "I":
+    if x == "I":
         print('''
 
              #
@@ -96,7 +99,7 @@ for x in name:
              #
 
 ''')
-    elif x == "J":
+    if x == "J":
         print('''
 
                 #
@@ -106,7 +109,7 @@ for x in name:
              ###
 
 ''')
-    elif x == "K":
+    if x == "K":
         print('''
 
             #   #
@@ -116,7 +119,7 @@ for x in name:
             #   #
 
 ''')
-    elif x == "L":
+    if x == "L":
         print('''
 
             #
@@ -126,7 +129,7 @@ for x in name:
             ######
 
 ''')
-    elif x == "M":
+    if x == "M":
         print('''
 
             #     #
@@ -136,7 +139,7 @@ for x in name:
             #     #
 
 ''')
-    elif x == "N":
+    if x == "N":
         print('''
 
             #    #
@@ -146,7 +149,7 @@ for x in name:
             #    #
 
 ''')
-    elif x == "O":
+    if x == "O":
         print('''
 
              ###
@@ -156,7 +159,7 @@ for x in name:
              ###
 
 ''')
-    elif x == "P":
+    if x == "P":
         print('''
 
             #####
@@ -166,7 +169,7 @@ for x in name:
             #
 
 ''')
-    elif x == "Q":
+    if x == "Q":
         print('''
 
              ###
@@ -176,7 +179,7 @@ for x in name:
              ###
 
 ''')
-    elif x == "R":
+    if x == "R":
         print('''
 
             #####
@@ -186,7 +189,7 @@ for x in name:
             #   #
 
 ''')
-    elif x == "S":
+    if x == "S":
         print('''
 
              #####
@@ -196,7 +199,7 @@ for x in name:
             #####
 
 ''')
-    elif x == "T":
+    if x == "T":
         print('''
 
             ######
@@ -206,7 +209,7 @@ for x in name:
                #
 
 ''')
-    elif x == "U":
+    if x == "U":
         print('''
 
             #   #
@@ -216,7 +219,7 @@ for x in name:
              ###
 
 ''')
-    elif x == "V":
+    if x == "V":
         print('''
 
             #     #
@@ -225,7 +228,7 @@ for x in name:
                #
 
 ''')
-    elif x == "W":
+    if x == "W":
         print('''
 
             #     #
@@ -235,7 +238,7 @@ for x in name:
             #     #
 
 ''')
-    elif x == "X":
+    if x == "X":
         print('''
 
             #   #
@@ -245,7 +248,7 @@ for x in name:
             #   #
 
 ''')
-    elif x == "Y":
+    if x == "Y":
         print('''
 
             #   #
@@ -255,7 +258,7 @@ for x in name:
               #
 
 ''')
-    elif x == "Z":
+    if x == "Z":
         print('''
 
             ######
@@ -265,5 +268,9 @@ for x in name:
             ######
 
 ''')
-    else:
-        print("Pattern not available for the letter: " + x)
+    # else:
+    #     print("Pattern not available for the letter: " + x)
+
+pattern = []
+pattern.append(x)
+print(pattern)
